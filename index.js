@@ -5,6 +5,27 @@ const sc2_abilities = require("./sc2_data.json")
 
 const Bot = new Discord.Client();
 
+/*
+const crypto = require("crypto")
+
+const fs = require("fs")
+fs.writeFileSync("hash.txt", JSON.stringify(hash_data()))
+process.exit()
+function getHash(data) {
+    const hasher = crypto.createHash('sha256');
+    hasher.update(data);
+    return hasher.digest('hex');
+}
+
+function hash_data(){
+    json = {}
+    for (elem in sc2_abilities){
+        json[elem] = getHash(sc2_abilities[elem]["description"])
+    }
+    return json
+}
+*/
+
 let token = settings["token"];
 let prefix = settings["prefix"];
 
@@ -45,7 +66,18 @@ let raceAbilities = {
         "Root (spine)",
         "Root (spore)",
         "Load (nydus)",
-        "Detector (spore)"
+        "Detector (spore)", 
+        "Spawn Larva", 
+        "Spawn Creep Tumor", 
+        "Transfusion", 
+        "Neural Parasite", 
+        "Fungal Growth", 
+        "Microbial Shroud", 
+        "Spawn Changeling", 
+        "Contaminate", 
+        "Blinding Cloud",
+        "Abduct", 
+        "Parasitic Bomb"
 ],
     protoss: [
         "Charge",
@@ -71,7 +103,21 @@ let raceAbilities = {
         "Cloaking Field",
         "Transform to Warpgate",
         "Transform to Gateway",
-        "Detector (photon cannon)"
+        "Detector (photon cannon)", 
+        "Force Field", 
+        "Guardian Shield", 
+        "Hallucination", 
+        "Feedback", 
+        "Psionic Storm", 
+        "Graviton Beam", 
+        "Revelation", 
+        "Stasis Ward", 
+        "Activate Pulsar Beam", 
+        "Mass Recall (Mothership)", 
+        "Time Warp", "Chrono Boost", 
+        "Strategic Recall", 
+        "Battery Overcharge", 
+        "Restore"
     ],
     terran: [
         "Repair",
@@ -107,7 +153,18 @@ let raceAbilities = {
         "Lower/Raise",
         "Load (bunker)",
         "Salvage",
-        "Detector (Missile turret)"
+        "Detector (Missile turret)", 
+        "Steady Targeting", 
+        "Cloak (Ghost)", 
+        "EMP Round", 
+        "Heal", 
+        "Build Auto-Turret", 
+        "Interference Matrix", 
+        "Anti-Armor Missile", 
+        "Cloak (Banshee)", 
+        "Calldown: MULE", 
+        "Calldown: Extra Supplies", 
+        "Scanner Sweep"
     ]
 };
 

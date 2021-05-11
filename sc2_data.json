@@ -144,7 +144,7 @@
     "name": "Build Interceptor",
     "image": "https://liquipedia.net/commons/images/7/72/Train_interceptors.gif",
     "caster": "Carrier",
-    "description": " 15\nBuilds up to 8 Interceptors that automatically attack the Carrier's target. Carriers may not attack without interceptors. Auto-build is enabled by default.",
+    "description": "Builds up to 8 Interceptors that automatically attack the Carrier's target. Carriers may not attack without interceptors. Auto-build is enabled by default.",
     "duration": "9 s",
     "hotkey": "I"
   },
@@ -639,31 +639,445 @@
     "range": "11",
     "description": "The Spore Crawler is a Detector structure that can see cloaked, burrowed and hallucinated units."
   },
-  "Hardened Shield": {
-    "name": "Hardened Shield",
-    "image": "https://liquipedia.net/commons/images/thumb/d/d6/Hardened_shield.png/62px-Hardened_shield.png",
-    "description": "An Immortal's passive ability that reduces all damage inflicted on the shields that is greater than 10 to 10."
+  "Force Field": {
+    "name": "Force Field",
+    "image": "https://liquipedia.net/commons/images/thumb/c/cd/Force_field.jpg/62px-Force_field.jpg",
+    "caster": "Sentry",
+    "description": "Barrier that lasts 11 seconds and impedes movement of ground units. Massive units will shatter Force Fields on contact. Hallucinated Massive units cannot shatter Force Fields.",
+    "range": "9",
+    "duration": "11",
+    "radius": "1.7",
+    "hotkey": "F"
   },
-  "Prismatic Beams": {
-    "name": "Prismatic Beams",
-    "image": "https://liquipedia.net/commons/images/thumb/f/ff/Prismatic_beams.png/61px-Prismatic_beams.png",
-    "description": "Increases the damage of the Void Ray the longer its attack animation occurs."
+  "Guardian Shield": {
+    "name": "Guardian Shield",
+    "image": "https://liquipedia.net/commons/images/thumb/2/25/Guardian_shield.jpg/62px-Guardian_shield.jpg",
+    "caster": "Sentry",
+    "description": "Creates a range 4.5 aura that reduces incoming ranged damage to friendly units by 2. Lasts 11 seconds.",
+    "duration": "11 s",
+    "radius": "4.5",
+    "hotkey": "G"
   },
-  "Upgrade To Mothership": {
-    "name": "Upgrade To Mothership",
-    "image": "https://liquipedia.net/commons/images/b/b6/Mothership_Icon.png",
-    "caster": "Mothership Core",
-    "description": "Upgrades into the Mothership. Can use Time Warp and Mass Recall. Cloaks nearby units and structures.",
-    "duration": "100 s",
-    "hotkey": "U"
+  "Hallucination": {
+    "name": "Hallucination",
+    "image": "https://liquipedia.net/commons/images/thumb/b/bc/Hallucination.png/61px-Hallucination.png",
+    "caster": "Sentry",
+    "description": "Creates hallucinations of Protoss units at the caster's location, that cannot use active abilities, cannot deal damage, and die more easily. Enemy detectors can reveal hallucinations.",
+    "range": "0",
+    "hotkey": "C"
   },
-  "Corruption": {
-    "name": "Corruption",
-    "image": "https://liquipedia.net/commons/images/thumb/7/75/Corruption.png/61px-Corruption.png",
+  "Feedback": {
+    "name": "Feedback",
+    "image": "https://liquipedia.net/commons/images/thumb/6/69/Feedback.png/62px-Feedback.png",
+    "caster": "High Templar",
+    "description": "Drains all energy from target unit. Deals 0.5 damage per point of energy drained this way.",
+    "range": "10",
+    "hotkey": "F"
+  },
+  "Psionic Storm": {
+    "name": "Psionic Storm",
+    "image": "https://liquipedia.net/commons/images/thumb/b/be/Psionic_storm.png/62px-Psionic_storm.png",
+    "caster": "High Templar",
+    "description": "Creates a storm of psionic energy that lasts 2.85 seconds, causing up to 80 damage to all units in the target area.",
+    "range": "9",
+    "cooldown": "1.43 s",
+    "duration": "2.85 s",
+    "radius": "1.5",
+    "hotkey": "T"
+  },
+  "Graviton Beam": {
+    "name": "Graviton Beam",
+    "image": "https://liquipedia.net/commons/images/thumb/d/dc/Graviton_beam.png/62px-Graviton_beam.png",
+    "caster": "Phoenix",
+    "description": "Makes the target unit float in the air, disabling its abilities. Massive units are immune.",
+    "range": "4",
+    "duration": "7 s",
+    "hotkey": "G"
+  },
+  "Revelation": {
+    "name": "Revelation",
+    "image": "https://liquipedia.net/commons/images/7/70/Preordain.png",
+    "caster": "Oracle",
+    "description": "Causes enemy units and structures within the target area to grant vision for 20 seconds. Reveals cloaked or burrowed units and structures.",
+    "range": "9",
+    "cooldown": "10 s",
+    "duration": "20 s",
+    "radius": "6",
+    "hotkey": "R"
+  },
+  "Stasis Ward": {
+    "name": "Stasis Ward",
+    "image": "https://liquipedia.net/commons/images/thumb/5/53/Stasis_Ward.png/61px-Stasis_Ward.png",
+    "caster": "Oracle",
+    "description": "Places a cloaked Stasis Ward at the target location that lasts 170 seconds. Once activated by an enemy ground unit, the ward traps nearby enemies in stasis for 21.5 seconds. Trapped units cannot be attacked or affected by abilities.",
     "range": "6",
-    "cooldown": "45 s",
-    "duration": "30 s",
-    "hotkey": "C",
-    "description": "The Corruptor corrupts target unit. It can't target structures. Unit takes 20% more damage for 30 seconds."
+    "duration": "3.58 s",
+    "radius": "4",
+    "hotkey": "T"
+  },
+  "Activate Pulsar Beam": {
+    "name": "Activate Pulsar Beam",
+    "image": "https://liquipedia.net/commons/images/thumb/9/92/PulsarBeam.png/62px-PulsarBeam.png",
+    "caster": "Oracle",
+    "description": "Charges the Oracle's Pulsar Beam, which does 15 (+7 vs Light) spell damage to ground units while active.",
+    "cooldown": "4",
+    "hotkey": "C"
+  },
+  "Mass Recall (Mothership)": {
+    "name": "Mass Recall",
+    "image": "https://liquipedia.net/commons/images/thumb/4/44/Strategic_Recall.png/62px-Strategic_Recall.png",
+    "caster": "Mothership",
+    "description": "Recalls all player units in the target area to the Mothership.",
+    "range": "500",
+    "duration": "4",
+    "radius": "6.5",
+    "hotkey": "R"
+  },
+  "Time Warp": {
+    "name": "Time Warp",
+    "image": "https://liquipedia.net/commons/images/thumb/3/39/Time_warp.jpg/62px-Time_warp.jpg",
+    "caster": "Mothership",
+    "description": "After a 1.79 second delay, warps spacetime within the target area for 7 seconds. Enemy units and structures within the field will have attack and movement speeds reduced by 50%.",
+    "range": "9",
+    "duration": "9",
+    "radius": "3.5",
+    "hotkey": "T"
+  },
+  "Chrono Boost": {
+    "name": "Chrono Boost",
+    "image": "https://liquipedia.net/commons/images/thumb/6/6a/Chrono_boost.png/62px-Chrono_boost.png",
+    "caster": "Nexus",
+    "description": "Places target structure in a Chrono Boost, causing it to operate 50% faster for 20 seconds.",
+    "hotkey": "C"
+  },
+  "Strategic Recall": {
+    "name": "Strategic Recall",
+    "image": "https://liquipedia.net/commons/images/thumb/7/77/Mass_Recall.png/62px-Mass_Recall.png",
+    "caster": "Nexus",
+    "description": "Recalls all units owned by the player in the target area to the Nexus.",
+    "cooldown": "130 s",
+    "duration": "4 s",
+    "radius": "2.5",
+    "hotkey": "R"
+  },
+  "Battery Overcharge": {
+    "name": "Battery Overcharge",
+    "image": "https://liquipedia.net/commons/images/thumb/f/f2/Battery_Overcharge.png/62px-Battery_Overcharge.png",
+    "caster": "Nexus",
+    "description": "Overcharges a target Shield Battery near a Nexus, increasing its shield restoration rate by 100% and allowing it to restore shields without consuming energy for 14 seconds. Can be casted on any Battery within 8 range of any friendly Nexus.",
+    "cooldown": "60 s",
+    "duration": "14 s"
+  },
+  "Restore": {
+    "name": "Restore",
+    "image": "https://liquipedia.net/commons/images/thumb/2/25/Guardian_shield.jpg/62px-Guardian_shield.jpg",
+    "caster": "Shield Battery",
+    "description": "Restores target unit or structure's shields. Restores 3 shields per 1 energy, 50.4 shields per second. Auto-cast by default. Autocasting targets units and defensive structures only.",
+    "range": "6",
+    "hotkey": "R"
+  },
+  "Steady Targeting": {
+    "name": "Steady Targeting",
+    "image": "https://liquipedia.net/commons/images/thumb/4/40/Snipe.png/61px-Snipe.png",
+    "caster": "Ghost",
+    "description": "After carefully aiming for 1.43 seconds while not taking damage, the Ghost fires a sniper round dealing 170 damage. Ignores armor. Can only target biological units.",
+    "range": "10",
+    "duration": "1.43 s",
+    "damage": "170",
+    "hotkey": "R"
+  },
+  "Cloak (Ghost)": {
+    "name": "Cloak",
+    "image": "https://liquipedia.net/commons/images/thumb/2/27/Cloak.png/61px-Cloak.png",
+    "caster": "Ghost",
+    "description": "The Ghost becomes invisible until it runs out of energy or the player cancels Cloak.",
+    "hotkey": "C"
+  },
+  "EMP Round": {
+    "name": "EMP Round",
+    "image": "https://liquipedia.net/commons/images/thumb/8/83/Emp_round.png/62px-Emp_round.png",
+    "caster": "Ghost",
+    "description": "The Ghost fires an EMP Round that removes up to 100 shields and energy from every unit and building within the AoE. Also reveals cloaked units.",
+    "range": "10",
+    "radius": "1.5",
+    "damage": "100",
+    "hotkey": "E"
+  },
+  "Heal": {
+    "name": "Heal",
+    "image": "https://liquipedia.net/commons/images/6/6e/Heal.png",
+    "caster": "Medivac",
+    "description": "The Medivac automatically (or on order) heals a close-by friendly biological unit.",
+    "range": "4",
+    "hotkey": "E"
+  },
+  "Build Auto-Turret": {
+    "name": "Build Auto-Turret",
+    "image": "https://liquipedia.net/commons/images/6/6b/Build_auto_turret.gif",
+    "caster": "Raven",
+    "description": "The Raven drops an Auto-Turret at the target location.",
+    "range": "2",
+    "duration": "10 s",
+    "radius": "6 (+1)",
+    "hotkey": "T"
+  },
+  "Interference Matrix": {
+    "name": "Interference Matrix",
+    "image": "https://liquipedia.net/commons/images/thumb/4/45/Interference_Matrix.png/62px-Interference_Matrix.png",
+    "caster": "Raven",
+    "description": "Disables a target unit rendering it unable to attack or use abilities for 11 seconds. Reveals Cloaked units. Can only target mechanical and psionic units.",
+    "range": "9",
+    "duration": "11 s",
+    "hotkey": "C"
+  },
+  "Anti-Armor Missile": {
+    "name": "Anti-Armor Missile",
+    "image": "https://liquipedia.net/commons/images/thumb/c/c6/Anti-Armor_Missile.png/62px-Anti-Armor_Missile.png",
+    "caster": "Raven",
+    "description": "Deploys a Missile which pursues the target unit, and, upon contact, reduces the armor and shield armor of affected units by 3 for 21 seconds.",
+    "range": "10",
+    "duration": "21 s",
+    "radius": "2.88",
+    "hotkey": "R"
+  },
+  "Cloak (Banshee)": {
+    "name": "Cloak",
+    "image": "https://liquipedia.net/commons/images/thumb/2/27/Cloak.png/61px-Cloak.png",
+    "caster": "Banshee",
+    "description": "The Banshee cloaks itself, turning invisible until it runs out of energy.",
+    "hotkey": "C"
+  },
+  "Calldown: MULE": {
+    "name": "Calldown: MULE",
+    "image": "https://liquipedia.net/commons/images/8/8a/Calldown_mule.gif",
+    "caster": "Orbital Command",
+    "description": "The Orbital Command calls down a MULE via Drop Pods. Mules can gather minerals at a faster rate than SCVs, and last for 64 seconds. One MULE and one SCV gather from the same mineral patch simultaneously.",
+    "duration": "64 s",
+    "hotkey": "E"
+  },
+  "Calldown: Extra Supplies": {
+    "name": "Calldown: Extra Supplies",
+    "image": "https://liquipedia.net/commons/images/thumb/a/a8/Calldown_extra_supplies.png/62px-Calldown_extra_supplies.png",
+    "caster": "Orbital Command",
+    "description": "The Orbital Command calls down additional supplies which permanently increase a Supply Depot's supply limit by 8.",
+    "duration": "3 s",
+    "hotkey": "X"
+  },
+  "Scanner Sweep": {
+    "name": "Scanner Sweep",
+    "image": "https://liquipedia.net/commons/images/thumb/3/32/Scanner_sweep.png/61px-Scanner_sweep.png",
+    "caster": "Orbital Command",
+    "description": "The Orbital Command scans a target location on the map revealing cloaked, burrowed or hallucinated units temporarily.",
+    "duration": "9 s",
+    "radius": "13",
+    "hotkey": "C"
+  },
+  "Spawn Larva": {
+    "name": "Spawn Larva",
+    "image": "https://liquipedia.net/commons/images/5/54/Spawn_larva.gif",
+    "caster": "Queen",
+    "description": "The Queen injects 3 Larva eggs into a Hatchery which after 29 seconds, hatch and 3 Larvae are ready to be used at the targeted Hatchery. If a Hatchery has more than 19 Larva, additional Larva will not be created. This will stack and queue if the target is already spawning additional larvae.",
+    "range": "1",
+    "cooldown": "1.8",
+    "duration": "29 s",
+    "hotkey": "V"
+  },
+  "Spawn Creep Tumor": {
+    "name": "Spawn Creep Tumor",
+    "image": "https://liquipedia.net/commons/images/f/f3/Spawn_creep_tumor.gif",
+    "caster": "Queen, Creep Tumor",
+    "description": "The Queen moves to and places a Creep Tumor at the targeted location. The tumor has 50 hit points and generates Creep. Each Creep Tumor can spawn one other Creep Tumor within a radius of 10.",
+    "range": "1",
+    "duration": "11 s",
+    "hotkey": "C"
+  },
+  "Transfusion": {
+    "name": "Transfusion",
+    "image": "https://liquipedia.net/commons/images/thumb/6/66/Transfusion.png/62px-Transfusion.png",
+    "caster": "Queen",
+    "description": "Instantly heals a target friendly, biological unit or structure for 75 health. An additional 50 health regenerates over 7 seconds.",
+    "range": "7",
+    "cooldown": "1 s",
+    "hotkey": "T"
+  },
+  "Neural Parasite": {
+    "name": "Neural Parasite",
+    "image": "https://liquipedia.net/commons/images/c/c7/Neural_parasite.png",
+    "caster": "Infestor",
+    "description": "The Infestor temporarily takes control of target enemy unit. The player can cancel this ability, or it will automatically cancel if the controlling Infestor is killed or the targeted unit is moved out of 14 range. Can not target Heroic units.",
+    "range": "8 (14)",
+    "duration": "11 s",
+    "hotkey": "E"
+  },
+  "Fungal Growth": {
+    "name": "Fungal Growth",
+    "image": "https://liquipedia.net/commons/images/5/51/Fungal_growth.png",
+    "caster": "Infestor",
+    "description": "Target units take 30 damage over 3 seconds and have movement speed reduced by 75%. Reveals cloaked and burrowed units. Affected units cannot Blink, Tactical Jump, or load into transports or buildings.",
+    "range": "10",
+    "duration": "3 s",
+    "radius": "2.25",
+    "hotkey": "F"
+  },
+  "Microbial Shroud": {
+    "name": "Microbial Shroud",
+    "image": "https://liquipedia.net/commons/images/thumb/2/26/Microbial_Shroud.png/62px-Microbial_Shroud.png",
+    "caster": "Infestor",
+    "description": "Creates a shroud that obscures ground units underneath, reducing damage taken from air units by 50%. Lasts 11 seconds.",
+    "range": "9",
+    "duration": "11 s",
+    "radius": "3.5",
+    "hotkey": "C"
+  },
+  "Spawn Changeling": {
+    "name": "Spawn Changeling",
+    "image": "https://liquipedia.net/commons/images/b/be/Spawn_changeling.gif",
+    "caster": "Overseer",
+    "description": "Spawn a Changeling, a small unit with timed life and no attack. When a Changeling first encounters an enemy unit, it will match that unit's color and change into a Zealot, Marine, or Zergling, depending on the enemy race.",
+    "range": "0",
+    "duration": "107 s",
+    "hotkey": "C"
+  },
+  "Contaminate": {
+    "name": "Contaminate",
+    "image": "https://liquipedia.net/commons/images/thumb/5/5f/Contaminate.png/62px-Contaminate.png",
+    "caster": "Overseer",
+    "description": "The Overseer covers an enemy structure in slime. The structure will be unable to train units or research upgrades for 21 seconds.",
+    "range": "3",
+    "duration": "21 s",
+    "hotkey": "E"
+  },
+  "Blinding Cloud": {
+    "name": "Blinding Cloud",
+    "image": "https://liquipedia.net/commons/images/5/56/Blinding_Cloud.png",
+    "caster": "Viper",
+    "description": "Creates a cloud for 5.71 seconds that reduces attack range of ground units and structures underneath to melee range.",
+    "range": "11",
+    "duration": "5.71 s",
+    "radius": "2",
+    "hotkey": "B"
+  },
+  "Abduct": {
+    "name": "Abduct",
+    "image": "https://liquipedia.net/commons/images/e/ec/Abduct.png",
+    "caster": "Viper",
+    "description": "Pulls a target unit to the location of the Viper.",
+    "range": "9",
+    "hotkey": "D"
+  },
+  "Parasitic Bomb": {
+    "name": "Parasitic Bomb",
+    "image": "https://liquipedia.net/commons/images/thumb/f/fc/Parasitic_Bomb.jpg/62px-Parasitic_Bomb.jpg",
+    "caster": "Viper",
+    "description": "Creates a parasitic cloud that deals 120 damage over 7 seconds to the target and enemy air units nearby. If the target dies, the cloud remains in the air where the enemy died until it expires.",
+    "range": "8",
+    "duration": "7",
+    "radius": "3",
+    "hotkey": "R"
+  },
+  "Envision": {
+    "name": "Envision",
+    "image": "https://liquipedia.net/commons/images/thumb/b/b7/Envision.png/62px-Envision.png",
+    "caster": "Oracle",
+    "description": "Grants detection within the Oracle’s sight range.",
+    "cooldown": "60s",
+    "duration": "60s",
+    "radius": "14",
+    "hotkey": "T"
+  },
+  "Vortex": {
+    "name": "Vortex",
+    "image": "https://liquipedia.net/commons/images/thumb/5/52/Vortex.png/62px-Vortex.png",
+    "caster": "Mothership",
+    "description": "Creates a Vortex at the target location. All units within 2.5 of the targeted area are sucked into the Vortex until it ends. Units released from the Vortex are then immune for 1.5 seconds.",
+    "range": "9",
+    "duration": "20 s",
+    "radius": "2.5",
+    "hotkey": "V"
+  },
+  "Mass Recall (Mothership OLD)": {
+    "name": "Mass Recall",
+    "image": "https://liquipedia.net/commons/images/1/1d/Mass_recallHotS.png",
+    "caster": "Mothership, Mothership Core",
+    "description": "Teleports the Mothership or Mothership Core and all nearby units owned by the player to the targeted Nexus.",
+    "range": "500",
+    "duration": "2 s",
+    "radius": "7",
+    "hotkey": "R"
+  },
+  "Photon Overcharge": {
+    "name": "Photon Overcharge",
+    "image": "https://liquipedia.net/commons/images/2/22/Purify.png",
+    "caster": "Mothership Core, Mothership",
+    "description": "Has to be cast on a Pylon. It grants the Pylon the ability to attack air and ground units and buildings for 30 damage and a range of 7 with a weapon speed of 0.714.",
+    "range": "7",
+    "duration": "14s",
+    "hotkey": "F"
+  },
+  "Sniper Round": {
+    "name": "Sniper Round",
+    "image": "https://liquipedia.net/commons/images/thumb/4/40/Snipe.png/61px-Snipe.png",
+    "caster": "Ghost",
+    "description": "The Ghost snipes a single, biological unit for 25(+25 vs psionic) damage. This ability can be queued for multiple snipes.",
+    "range": "10",
+    "duration": "0.5 s",
+    "damage": "25+25",
+    "hotkey": "R"
+  },
+  "250mm Strike Cannons": {
+    "name": "250mm Strike Cannons",
+    "image": "https://liquipedia.net/commons/images/thumb/0/02/250mm_strike_cannons.png/61px-250mm_strike_cannons.png",
+    "caster": "Thor",
+    "description": "The Thor focuses a single target channeling 500 damage over 6 seconds and stunning the target for 6. It can be used against buildings. The Thor must enter and exit 250mm Strike Cannons mode, which takes 2 seconds each.",
+    "range": "7",
+    "duration": "2+6+2 s",
+    "damage": "500",
+    "hotkey": "C"
+  },
+  "Seeker Missile": {
+    "name": "Seeker Missile",
+    "image": "https://liquipedia.net/commons/images/thumb/a/ac/Seeker_missile.png/62px-Seeker_missile.png",
+    "caster": "Raven",
+    "description": "Missile rapidly moves and explodes at the target, causing 30/15/7.5 splash damage in 0.72/1.44/2.88 radius and reducing the armor of affected units by -3 (can make armor negative). Targeted unit lights up red when targeted. Can be fully dodged by teleport abilities and loading units inside structures.",
+    "range": "10",
+    "radius": "2.88",
+    "damage": "30",
+    "hotkey": "R"
+  },
+  "Build Point Defense Drone": {
+    "name": "Build Point Defense Drone",
+    "image": "https://liquipedia.net/commons/images/9/95/Build_point_defense_drone.gif",
+    "caster": "Raven",
+    "description": "The Raven drops a Point Defense Drone at the target location.",
+    "range": "3",
+    "duration": "14 s",
+    "radius": "8 (+1)",
+    "hotkey": "D"
+  },
+  "Point Defense Laser": {
+    "name": "Point Defense Laser",
+    "image": "https://liquipedia.net/commons/images/4/42/PointDefenseLaserIcon.jpg",
+    "caster": "Point Defense Drone",
+    "description": "Automated defensive laser that intercepts enemy projectiles. Effective against Marauders, Vikings, Banshees, Battlecruisers, Thors, Missile Turrets, Stalkers, Phoenixes, Photon Cannons, Queens, Mutalisks, Corruptors, Hydralisks, Spore Crawlers.",
+    "range": "8 (+1)",
+    "cooldown": "0"
+  },
+  "Yamato Cannon (OLD)": {
+    "name": "Yamato Cannon",
+    "image": "https://liquipedia.net/commons/images/thumb/3/30/Yamato_cannon.png/61px-Yamato_cannon.png",
+    "description": "The Battlecruiser's Yamato Cannon fires an intense blast of concentrated energy at the target, dealing 300 points of damage.",
+    "range": "10",
+    "duration": "3 s",
+    "damage": "300",
+    "hotkey": "Y"
+  },
+  "Infested Terran": {
+    "name": "Infested Terran",
+    "image": "https://liquipedia.net/commons/images/8/8d/Infested_terrans.gif",
+    "caster": "Infestor",
+    "description": "Spawns an Infested Swarm Egg, which takes 5 seconds to hatch and has 70 health. An Infested Terran has 50 health, lives for 21 seconds and has a ranged attack.",
+    "range": "8",
+    "duration": "21 s",
+    "hotkey": "T"
   }
 }
