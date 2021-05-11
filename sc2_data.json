@@ -1,0 +1,669 @@
+{
+  "Charge": {
+    "name": "Charge",
+    "image": "https://liquipedia.net/commons/images/thumb/d/db/Charge.png/62px-Charge.png",
+    "caster": "Zealot",
+    "range": "4",
+    "cooldown": "7",
+    "duration": "2.5 s",
+    "hotkey": "C",
+    "description": "Temporarily increases the movement speed of a Zealot by 5.67, to a total of 10.4, allowing Zealots to intercept nearby enemies. Researching the upgrade increases the base movement speed of Zealots to 4.725, making a Zealot as fast as a stimmed Marine."
+  },
+  "Blink": {
+    "name": "Blink",
+    "image": "https://liquipedia.net/commons/images/thumb/1/16/Blink.png/62px-Blink.png",
+    "caster": "Stalker",
+    "range": "8",
+    "cooldown": "7",
+    "hotkey": "B",
+    "description": "Teleports the Stalker to a nearby target location that is not obscured by Fog of War. Ability can only be used once every 7 seconds."
+  },
+  "Psionic Transfer": {
+    "name": "Psionic Transfer",
+    "image": "https://liquipedia.net/commons/images/8/86/Psionic_Transfer.png",
+    "caster": "Adept",
+    "cooldown": "11 s",
+    "duration": "7 s",
+    "hotkey": "F",
+    "description": "Projects an invulnerable Shade that can move but cannot attack. After 7 seconds, the Adept teleports to the Shade's location."
+  },
+  "Archon Merge": {
+    "name": "Archon Merge",
+    "image": "https://liquipedia.net/commons/images/b/b3/Archon_warp.gif",
+    "caster": "High Templar, Dark Templar",
+    "duration": "8.57",
+    "hotkey": "C",
+    "description": "Sacrifices 2 Templar to create an Archon."
+  },
+  "Shadow Stride": {
+    "name": "Shadow Stride",
+    "image": "https://liquipedia.net/commons/images/e/e4/Shadow_Stride.png",
+    "caster": "Dark Templar",
+    "range": "8",
+    "cooldown": "14 s",
+    "hotkey": "B",
+    "description": "Teleports the Dark Templar to a nearby target location."
+  },
+  "Permanent Cloak (dt)": {
+    "name": "Permanent Cloak",
+    "image": "https://liquipedia.net/commons/images/thumb/6/6d/Permanent_cloak_dt.png/59px-Permanent_cloak_dt.png",
+    "description": "The Dark Templar is permanently cloaked."
+  },
+  "Barrier": {
+    "name": "Barrier",
+    "image": "https://liquipedia.net/commons/images/thumb/c/cc/Barrier.png/62px-Barrier.png",
+    "caster": "Immortal",
+    "cooldown": "32 s",
+    "duration": "2 s",
+    "description": "Absorbs up to 100 damage. Lasts for 2 seconds."
+  },
+  "Cliff Walk": {
+    "name": "Cliff Walk",
+    "image": "https://liquipedia.net/commons/images/thumb/6/67/Cliff_walk.png/61px-Cliff_walk.png",
+    "description": "Allows the Colossus to walk up and down cliffs."
+  },
+  "Purification Nova": {
+    "name": "Purification Nova",
+    "image": "https://liquipedia.net/commons/images/6/6d/Purification_Nova.png",
+    "caster": "Disruptor",
+    "cooldown": "21.4 s",
+    "duration": "2.1 s",
+    "radius": "1.5",
+    "hotkey": "V",
+    "description": "Shoots out a ball of energy that detonates after 2.1 seconds, dealing 145 splash damage and an additional 55 shield damage to nearby ground units and structures. The Disruptor is immobile while this is active. The Disruptor's visual glow is dulled a little bit during cool-down."
+  },
+  "Stasis Trap": {
+    "name": "Stasis Trap",
+    "image": "https://liquipedia.net/commons/images/9/9d/Stasis_Trap.png",
+    "caster": "Stasis Ward",
+    "duration": "21",
+    "description": "Traps nearby enemies in stasis for 21 seconds. Trapped units cannot be attacked or affected by abilities."
+  },
+  "Permanent Cloak (oracle trap)": {
+    "name": "Permanent Cloak",
+    "image": "https://liquipedia.net/commons/images/thumb/3/35/Permanent_cloak_observer.png/61px-Permanent_cloak_observer.png",
+    "description": "The Stasis Ward is permanently cloaked."
+  },
+  "Detector (observer)": {
+    "name": "Detector",
+    "image": "https://liquipedia.net/commons/images/b/b4/Detector.gif",
+    "range": "11",
+    "description": "The Observer is a Detector unit that can see cloaked, burrowed and hallucinated units."
+  },
+  "Permanent Cloak (observer)": {
+    "name": "Permanent Cloak",
+    "image": "https://liquipedia.net/commons/images/thumb/3/35/Permanent_cloak_observer.png/61px-Permanent_cloak_observer.png",
+    "description": "The Observer is permanently cloaked."
+  },
+  "Surveillance Mode": {
+    "name": "Surveillance Mode",
+    "image": "https://liquipedia.net/commons/images/thumb/3/3f/Surveillance_Mode.png/62px-Surveillance_Mode.png",
+    "caster": "Observer",
+    "duration": "0.54 s",
+    "hotkey": "E",
+    "description": "Transforms the Observer to Surveillance Mode. The Observer gains 25% wider vision, but loses the ability to move."
+  },
+  "Observer Mode": {
+    "name": "Observer Mode",
+    "image": "https://liquipedia.net/commons/images/thumb/1/1e/Observer_Mode.png/62px-Observer_Mode.png",
+    "caster": "Observer",
+    "duration": "0.54 s",
+    "hotkey": "T",
+    "description": "Transforms the Observer to standard Observer Mode. Allows the Observer to move at the cost of decreased sight radius."
+  },
+  "Prismatic Alignment": {
+    "name": "Prismatic Alignment",
+    "image": "https://liquipedia.net/commons/images/4/44/Prismatic_Alignment.png",
+    "caster": "Void Ray",
+    "cooldown": "42.9",
+    "duration": "14.3",
+    "hotkey": "E",
+    "description": "Realigns the Void Ray's Prismatic Beam to gain +6 damage vs. armored units for 14.3 seconds. While Prismatic Alignment is active, movement speed is reduced by 25%."
+  },
+  "Phasing Mode": {
+    "name": "Phasing Mode",
+    "image": "https://liquipedia.net/commons/images/1/17/Phasing_mode.gif",
+    "duration": "2 s",
+    "hotkey": "E",
+    "description": "Transforms the Warp Prism to Phasing Mode and generates a power radius similar to that of a Pylon. The Warp Prism cannot move in this mode."
+  },
+  "Transport Mode": {
+    "name": "Transport Mode",
+    "image": "https://liquipedia.net/commons/images/4/4e/Transport_mode.gif",
+    "duration": "2 s",
+    "hotkey": "T",
+    "description": "The Warp Prism returns to being a mobile transport. Takes 2 seconds to revert."
+  },
+  "Load (warp prism)": {
+    "name": "Load",
+    "image": "https://liquipedia.net/commons/images/4/43/Load_protoss.gif",
+    "hotkey": "L",
+    "description": "The Warp Prism has a cargo space of 8."
+  },
+  "Build Interceptor": {
+    "name": "Build Interceptor",
+    "image": "https://liquipedia.net/commons/images/7/72/Train_interceptors.gif",
+    "caster": "Carrier",
+    "description": " 15\nBuilds up to 8 Interceptors that automatically attack the Carrier's target. Carriers may not attack without interceptors. Auto-build is enabled by default.",
+    "duration": "9 s",
+    "hotkey": "I"
+  },
+  "Cloaking Field": {
+    "name": "Cloaking Field",
+    "image": "https://liquipedia.net/commons/images/thumb/a/a0/Cloaking_field.png/61px-Cloaking_field.png",
+    "radius": "5",
+    "description": "The Mothership cloaks all nearby units and buildings."
+  },
+  "Transform to Warpgate": {
+    "name": "Transform to Warpgate",
+    "image": "https://liquipedia.net/commons/images/6/68/Transform_warpgate.gif",
+    "duration": "7 s",
+    "hotkey": "G",
+    "description": "Transforms the Gateway into a Warp Gate."
+  },
+  "Transform to Gateway": {
+    "name": "Transform to Gateway",
+    "image": "https://liquipedia.net/commons/images/5/5e/Transform_gateway.gif",
+    "duration": "7 s",
+    "hotkey": "M",
+    "description": "The Warpgate transforms back into a Gateway."
+  },
+  "Detector (photon cannon)": {
+    "name": "Detector",
+    "image": "https://liquipedia.net/commons/images/b/b4/Detector.gif",
+    "range": "11",
+    "description": "The Photon Cannon is a Detector structure that can see cloaked, burrowed and hallucinated units."
+  },
+  "Repair": {
+    "name": "Repair",
+    "image": "https://liquipedia.net/commons/images/6/64/Repair.gif",
+    "description": "SCVs and MULEs can Repair friendly mechanical units and Terran buildings.",
+    "duration": "*",
+    "hotkey": "R"
+  },
+  "Stimpack": {
+    "name": "Stimpack",
+    "image": "https://liquipedia.net/commons/images/thumb/3/39/Stimpack.png/62px-Stimpack.png",
+    "duration": "11 s",
+    "hotkey": "T",
+    "description": "Increases the movement speed and firing rate by 50% at the cost of 10 HP for a Marine or 20 HP for a Marauder."
+  },
+  "Concussive Shells": {
+    "name": "Concussive Shells",
+    "image": "https://liquipedia.net/commons/images/thumb/9/98/Concussive_Shells.png/61px-Concussive_Shells.png",
+    "duration": "1.07 s",
+    "description": "Slows an enemy's movement speed by 50% when hit by the Marauder's attack. The slowing effect does not stack, but the timer is refreshed by subsequent hits. Massive units are immune to the slow."
+  },
+  "Jet Pack": {
+    "name": "Jet Pack",
+    "image": "https://liquipedia.net/commons/images/thumb/4/4b/Jet_Pack.png/59px-Jet_Pack.png",
+    "description": "Allows Reapers to travel up and down cliffs."
+  },
+  "Combat Drugs": {
+    "name": "Combat Drugs",
+    "image": "https://liquipedia.net/commons/images/thumb/c/c4/CombatDrugs.png/62px-CombatDrugs.png",
+    "description": "Heals 2.8 HP every second if the Reaper is not attacked for 7 seconds."
+  },
+  "KD8 Charge": {
+    "name": "KD8 Charge",
+    "image": "https://liquipedia.net/commons/images/5/52/KD8_Charge_%28Patch_3.1.2%29.jpg",
+    "caster": "Reaper",
+    "range": "5",
+    "cooldown": "14",
+    "radius": "2",
+    "hotkey": "D",
+    "description": "Explodes after a short delay, dealing 5 damage and knocking back nearby units."
+  },
+  "Tac Nuke Strike": {
+    "name": "Tac Nuke Strike",
+    "image": "https://liquipedia.net/commons/images/thumb/e/ec/Nuke.png/60px-Nuke.png",
+    "range": "12",
+    "cooldown": "14 s",
+    "damage": "300 (+200 to buildings)",
+    "hotkey": "N",
+    "description": "Calls down a Nuclear strike at a target location. Nukes take 14 seconds to land, but they deal up to 300 (+200 vs. structures) damage in a large radius."
+  },
+  "Hellbat Mode": {
+    "name": "Hellbat Mode",
+    "image": "https://liquipedia.net/commons/images/thumb/b/b8/BattleHellion.png/62px-BattleHellion.png",
+    "duration": "2.86-3.04 s",
+    "hotkey": "D",
+    "description": "Transforms the Hellion into its Hellbat form. Requires an Armory."
+  },
+  "Hellion Mode": {
+    "name": "Hellion Mode",
+    "image": "https://liquipedia.net/commons/images/thumb/3/30/H_hellion.png/62px-H_hellion.png",
+    "duration": "2.86-3.04 s",
+    "hotkey": "E",
+    "description": "Transforms the Hellbat into its Hellion form."
+  },
+  "Activate Mine": {
+    "name": "Activate Mine",
+    "image": "https://liquipedia.net/commons/images/8/8c/Activate_Mine.png",
+    "caster": "Widow Mine",
+    "duration": "2.14-2.5 s (0.71-1.07 s)",
+    "hotkey": "E",
+    "description": "Burrows the Widow Mine and readies the weapon. Cannot move while activated."
+  },
+  "Deactivate Mine": {
+    "name": "Deactivate Mine",
+    "image": "https://liquipedia.net/commons/images/thumb/7/7a/Deactivate_Mine.png/62px-Deactivate_Mine.png",
+    "caster": "Widow Mine",
+    "duration": "0.71-1.07 s",
+    "hotkey": "D",
+    "description": "Unburrows the Widow Mine and deactivates its weapon, allowing it to move."
+  },
+  "Sentinel Missiles": {
+    "name": "Sentinel Missiles",
+    "image": "https://liquipedia.net/commons/images/1/15/Unstable_Payload.png",
+    "range": "5",
+    "cooldown": "29",
+    "description": "Attacks by launching missiles at enemy ground and air units that get too close. Missiles deal 125 (+35 vs. shields) damage to their primary target, and 40 (+25 vs. shields) splash damage to units nearby."
+  },
+  "Lock On": {
+    "name": "Lock On",
+    "image": "https://liquipedia.net/commons/images/thumb/7/70/Lock_On.jpg/62px-Lock_On.jpg",
+    "caster": "Cyclone",
+    "range": "7 (15)",
+    "cooldown": "4.3s",
+    "duration": "14.3 s",
+    "hotkey": "C",
+    "description": "Locks the Cyclone's weapons on the target unit, dealing 400 damage over 14 seconds to ground and flying targets. Can move while firing. Cancels if target moves out of range."
+  },
+  "Siege Mode": {
+    "name": "Siege Mode",
+    "image": "https://liquipedia.net/commons/images/c/c6/Siege_mode.gif",
+    "duration": "2.89-3.24 s",
+    "hotkey": "E",
+    "description": "Deploys into Siege Mode. In this mode, Siege Tanks have very long range and inflict area damage. Siege Tanks in this mode cannot move or attack targets at close range."
+  },
+  "Tank Mode": {
+    "name": "Tank Mode",
+    "image": "https://liquipedia.net/commons/images/3/33/Tank_mode.gif",
+    "duration": "2.53-2.89 s",
+    "hotkey": "D",
+    "description": "Reverts to Tank Mode. In this mode, Siege Tanks can move, but they do less damage."
+  },
+  "High Impact Payload": {
+    "name": "High Impact Payload",
+    "image": "https://liquipedia.net/commons/images/thumb/a/a4/HighImpactPayload.png/61px-HighImpactPayload.png",
+    "duration": "1.79-1.96 s",
+    "hotkey": "E",
+    "description": "Activates the Thor's 250mm Punisher Cannons, which strike a single air target for heavy damage."
+  },
+  "Explosive Payload": {
+    "name": "Explosive Payload",
+    "image": "https://liquipedia.net/commons/images/thumb/b/b4/ExplosivePayload.png/61px-ExplosivePayload.png",
+    "duration": "1.79-1.96 s",
+    "hotkey": "D",
+    "description": "Arms the Thor's Javelin missile launchers, which deal splash damage to nearby air units and additional damage to Light units."
+  },
+  "Assault Mode": {
+    "name": "Assault Mode",
+    "image": "https://liquipedia.net/commons/images/1/19/Assault_mode.gif",
+    "duration": "1.67-2.03 s",
+    "hotkey": "D",
+    "description": "Transforms the Viking into Assault Mode where it becomes a Ground unit with a ground attack."
+  },
+  "Fighter Mode (viking)": {
+    "name": "Fighter Mode",
+    "image": "https://liquipedia.net/commons/images/c/c4/Fighter_mode.gif",
+    "duration": "1.67-2.02 s",
+    "hotkey": "E",
+    "description": "Transforms the Viking into Fighter Mode where it becomes an Air unit with an anti-air attack."
+  },
+  "Defender Mode": {
+    "name": "Defender Mode",
+    "image": "https://liquipedia.net/commons/images/3/39/Defender_mode.png",
+    "duration": "2.89 s",
+    "hotkey": "E",
+    "description": "Deploys into Defender Mode. In this mode, Liberators inflict single target damage to ground units. Liberators in this mode cannot move."
+  },
+  "Fighter Mode (liberator)": {
+    "name": "Fighter Mode",
+    "image": "https://liquipedia.net/commons/images/thumb/2/22/Fighter_mode_liberator.png/62px-Fighter_mode_liberator.png",
+    "duration": "1.46 s",
+    "hotkey": "D",
+    "description": "Reverts to Fighter Mode. In this mode, Liberators can move, but they can only target air units."
+  },
+  "Detector (Raven)": {
+    "name": "Detector",
+    "image": "https://liquipedia.net/commons/images/b/b4/Detector.gif",
+    "range": "11",
+    "description": "The Raven is a Detector unit that can see cloaked, burrowed and hallucinated units."
+  },
+  "Load (medivac)": {
+    "name": "Load",
+    "image": "https://liquipedia.net/commons/images/9/95/Load.gif",
+    "hotkey": "L",
+    "description": "The Medivac has a cargo space of 8."
+  },
+  "Ignite Afterburners": {
+    "name": "Ignite Afterburners",
+    "image": "https://liquipedia.net/commons/images/c/cf/IgniteAfterburners.png",
+    "cooldown": "14s",
+    "hotkey": "B",
+    "description": "Speed boost that increases Medivac's movement speed and acceleration to 5.94 for 4.3 seconds."
+  },
+  "Tactical Jump": {
+    "name": "Tactical Jump",
+    "image": "https://liquipedia.net/commons/images/thumb/4/4d/Tactical_Jump.png/62px-Tactical_Jump.png",
+    "caster": "Battlecruiser",
+    "cooldown": "71 s",
+    "duration": "4 s",
+    "hotkey": "T",
+    "description": "After 4 seconds, warps to the target location. Battlecruiser is invincible while warping. Stuns and puts the Battlecruiser into a 1 second vulnerability phase before it teleports. In this state, the Battlecruiser can be damaged, but Tactical Jump may not be canceled."
+  },
+  "Yamato Cannon": {
+    "name": "Yamato Cannon",
+    "image": "https://liquipedia.net/commons/images/thumb/3/30/Yamato_cannon.png/61px-Yamato_cannon.png",
+    "caster": "Battlecruiser",
+    "range": "10",
+    "cooldown": "71 s",
+    "duration": "2 s",
+    "damage": "240",
+    "hotkey": "Y",
+    "description": "Blasts a target with a devastating plasma cannon, causing 240 damage."
+  },
+  "Load (CC)": {
+    "name": "Load",
+    "image": "https://liquipedia.net/commons/images/9/95/Load.gif",
+    "range": "6",
+    "hotkey": "O",
+    "description": "Enables the Terran player to load SCV's into a Command Center or Planetary Fortress."
+  },
+  "Lift off": {
+    "name": "Lift off",
+    "image": "https://liquipedia.net/commons/images/thumb/8/89/Lift_off.gif/61px-Lift_off.gif",
+    "duration": "1 s",
+    "hotkey": "L",
+    "description": "Lifts off a building, making it airborne and mobile. Can be used by Command Center, Orbital Command, Barracks, Factory and Starport."
+  },
+  "Land": {
+    "name": "Land",
+    "image": "https://liquipedia.net/commons/images/thumb/a/ae/Land.png/61px-Land.png",
+    "duration": "2 s",
+    "hotkey": "L",
+    "description": "Lands a building at the target location. Can be used by Command Center, Orbital Command, Barracks, Factory and Starport."
+  },
+  "Radar": {
+    "name": "Radar",
+    "image": "https://liquipedia.net/commons/images/8/89/Radar.gif",
+    "range": "30",
+    "description": "Enemies under fog of war within the range of the Sensor Tower are marked with a red symbol displaying an exclamation mark."
+  },
+  "Lower/Raise": {
+    "name": "Lower/Raise",
+    "image": "https://liquipedia.net/commons/images/d/d7/Lower.gif",
+    "duration": "1 s",
+    "hotkey": "R",
+    "description": "Lowers/Raises the Supply Depot, allowing/preventing ground units from moving across it. If multiple Supply Depots in different states were selected, the first selected determines whether all would be lowered or raised."
+  },
+  "Load (bunker)": {
+    "name": "Load",
+    "image": "https://liquipedia.net/commons/images/9/95/Load.gif",
+    "hotkey": "L",
+    "description": "The Bunker can load SCVs, Marines, Marauders, Reapers, and Ghosts, protecting them from fire. Has a cargo space of 4 (+2 with upgrade)."
+  },
+  "Salvage": {
+    "name": "Salvage",
+    "image": "https://liquipedia.net/commons/images/2/2b/Salvage.gif",
+    "duration": "4 s",
+    "hotkey": "V",
+    "description": "Destroys the building and returns 75% of its cost. Cannot be cancelled once activated."
+  },
+  "Detector (Missile turret)": {
+    "name": "Detector",
+    "image": "https://liquipedia.net/commons/images/b/b4/Detector.gif",
+    "range": "11",
+    "description": "The Missile Turret is a Detector structure that can see cloaked, burrowed and hallucinated units."
+  },
+  "Burrow": {
+    "name": "Burrow",
+    "image": "https://liquipedia.net/commons/images/7/7d/Burrow_3.1.2.png",
+    "hotkey": "R",
+    "description": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection. Requires Burrow researched at Hatchery, Lair, or Hive"
+  },
+  "Unburrow": {
+    "name": "Unburrow",
+    "image": "https://liquipedia.net/commons/images/c/c6/Unburrow_3.1.2.png",
+    "duration": "1 or 2 s",
+    "hotkey": "R",
+    "description": "Returns the unit above ground to regain offensive capabilities."
+  },
+  "Morph to Baneling": {
+    "name": "Morph to Baneling",
+    "image": "https://liquipedia.net/commons/images/1/15/Baneling.gif",
+    "description": "This ability morphs a Zergling into a Baneling. Requires a Baneling Nest.",
+    "duration": "14 s",
+    "hotkey": "E"
+  },
+  "Explode": {
+    "name": "Explode",
+    "image": "https://liquipedia.net/commons/images/thumb/d/d0/Explode.png/62px-Explode.png",
+    "radius": "2.2",
+    "hotkey": "X",
+    "description": "The Baneling detonates where it is standing, damaging nearby enemy units and structures."
+  },
+  "Enable Building Attack": {
+    "name": "Enable Building Attack",
+    "image": "https://liquipedia.net/commons/images/thumb/c/c1/Attack_Structure.png/62px-Attack_Structure.png",
+    "damage": "80",
+    "hotkey": "F",
+    "description": "The Baneling will target buildings like any other unit does."
+  },
+  "Disable Building Attack": {
+    "name": "Disable Building Attack",
+    "image": "https://liquipedia.net/commons/images/thumb/d/d0/Explode.png/62px-Explode.png",
+    "hotkey": "G",
+    "description": "The Baneling will no longer target buildings."
+  },
+  "Rapid Regeneration": {
+    "name": "Rapid Regeneration",
+    "image": "https://liquipedia.net/commons/images/thumb/5/57/Rapid_regeneration.png/62px-Rapid_regeneration.png",
+    "description": "While burrowed, the Roach regenerates its health at an extremely fast rate of 7 hit points per second."
+  },
+  "Morph to Ravager": {
+    "name": "Morph to Ravager",
+    "image": "https://liquipedia.net/commons/images/d/d6/Morph_to_Ravager.jpg",
+    "caster": "Roach",
+    "description": "Morphs the Roach into a Ravager.",
+    "duration": "8.57-8.93",
+    "hotkey": "V"
+  },
+  "Corrosive Bile": {
+    "name": "Corrosive Bile",
+    "image": "https://liquipedia.net/commons/images/thumb/1/17/Btn-ability-zerg-corrosivebile.jpg/62px-Btn-ability-zerg-corrosivebile.jpg",
+    "caster": "Ravager",
+    "range": "9",
+    "cooldown": "7 s",
+    "radius": "0.5",
+    "hotkey": "C",
+    "description": "Launch a missile at the target location, dealing 60 damage to all units and destroying all Force Fields in the area upon impact."
+  },
+  "Disguise": {
+    "name": "Disguise",
+    "image": "https://liquipedia.net/commons/images/e/e7/Disguise.gif",
+    "range": "12",
+    "duration": "Permanent",
+    "description": "The Changeling will transform into a basic unit of the enemy that is near (Marine, Zergling, Zealot). The Changeling will also copy the upgraded models of those units (Combat Shield, Metabolic Boost)."
+  },
+  "Morph to Lurker": {
+    "name": "Morph to Lurker",
+    "image": "https://liquipedia.net/commons/images/thumb/8/8e/Morph_to_Lurker.jpg/62px-Morph_to_Lurker.jpg",
+    "caster": "Hydralisk",
+    "description": "Morphs the Hydralisk into a Lurker. Requires a Lurker Den.",
+    "duration": "17.86-18.21",
+    "hotkey": "E"
+  },
+  "Spawn Locusts": {
+    "name": "Spawn Locusts",
+    "image": "https://liquipedia.net/commons/images/d/dc/Spawn_Locusts.png",
+    "caster": "Swarm Host",
+    "cooldown": "43 s",
+    "duration": "18 s",
+    "hotkey": "C",
+    "description": "Spawns 2 Locusts. Locusts have a 18-second timed life."
+  },
+  "Swoop": {
+    "name": "Swoop",
+    "image": "https://liquipedia.net/commons/images/thumb/0/03/Btn-zerg-locust-swoop.png/62px-Btn-zerg-locust-swoop.png",
+    "caster": "Locust",
+    "range": "6",
+    "hotkey": "Z",
+    "description": "Orders the Locust to land at the targeted location, allowing it to attack."
+  },
+  "Frenzied": {
+    "name": "Frenzied",
+    "image": "https://liquipedia.net/commons/images/thumb/4/4c/Frenzied.png/62px-Frenzied.png",
+    "duration": "Permanent",
+    "description": "Zerg unit is immune to snare, stun, mind control, and movement altering effects."
+  },
+  "Generate Creep": {
+    "name": "Generate Creep",
+    "image": "https://liquipedia.net/commons/images/thumb/d/dd/Generate_creep.png/62px-Generate_creep.png",
+    "caster": "Overlord",
+    "hotkey": "G",
+    "description": "Makes the Overlord start to generate creep. Creep will only be generated when the Overlord isn't moving."
+  },
+  "Mutate Ventral Sacs": {
+    "name": "Mutate Ventral Sacs",
+    "image": "https://liquipedia.net/commons/images/b/b7/Mutate_Ventral_Sacs.png",
+    "description": "Enables the Overlord to transport units. Requires a Lair.",
+    "duration": "12 s",
+    "hotkey": "T"
+  },
+  "Morph to Overseer": {
+    "name": "Morph to Overseer",
+    "image": "https://liquipedia.net/commons/images/thumb/c/c9/Overseer_Icon.png/61px-Overseer_Icon.png",
+    "description": "Morphs the selected Overlord into an Overseer. Requires Lair.",
+    "duration": "12 s",
+    "hotkey": "V"
+  },
+  "Load (overlord)": {
+    "name": "Load",
+    "image": "https://liquipedia.net/commons/images/d/de/Load_zerg.gif",
+    "hotkey": "L",
+    "description": "The Overlord has a cargo space of 8. Overlords can use the Load ability only after mutating Ventral Sacs."
+  },
+  "Detector (overseer)": {
+    "name": "Detector",
+    "image": "https://liquipedia.net/commons/images/b/b4/Detector.gif",
+    "range": "11",
+    "description": "The Overseer is a Detector unit that can see cloaked, burrowed and hallucinated units."
+  },
+  "Oversight": {
+    "name": "Oversight",
+    "image": "https://liquipedia.net/commons/images/thumb/5/56/Oversight.png/62px-Oversight.png",
+    "caster": "Overseer",
+    "duration": "0.54 s",
+    "hotkey": "W",
+    "description": "Grants the Overseer 25% wider vision, but removes its ability to move. This ability can be canceled after activation."
+  },
+  "Cancel Oversight": {
+    "name": "Cancel Oversight",
+    "image": "https://liquipedia.net/commons/images/thumb/8/88/Cancel_Oversight.png/62px-Cancel_Oversight.png",
+    "caster": "Overseer",
+    "duration": "0.54 s",
+    "hotkey": "R",
+    "description": "Restores the Overseer's ability to move and returns its vision to its normal radius."
+  },
+  "Tissue Regeneration": {
+    "name": "Tissue Regeneration",
+    "image": "https://liquipedia.net/commons/images/thumb/f/f0/TissueRegeneration.png/61px-TissueRegeneration.png",
+    "description": "Mutalisk health regeneration rate increased to 1.4 HP/second."
+  },
+  "Morph to Brood Lord": {
+    "name": "Morph to Brood Lord",
+    "image": "https://liquipedia.net/commons/images/thumb/3/3c/Brood_Lord_Icon.png/61px-Brood_Lord_Icon.png",
+    "caster": "Corruptor",
+    "description": "Morphs the Corruptor into a Brood Lord. Requires a Greater Spire.",
+    "duration": "24.17",
+    "hotkey": "B"
+  },
+  "Caustic Spray": {
+    "name": "Caustic Spray",
+    "image": "https://liquipedia.net/commons/images/thumb/7/75/Corruption.png/61px-Corruption.png",
+    "caster": "Corruptor",
+    "range": "6",
+    "cooldown": "32.14",
+    "duration": "Channeled",
+    "hotkey": "C",
+    "description": "Emits a stream of acid that deals 7 damage per second for 4.29 seconds, then increases to 35 damage per second. Can only target Structures."
+  },
+  "Swarm Seeds": {
+    "name": "Swarm Seeds",
+    "image": "https://liquipedia.net/commons/images/thumb/1/19/Swarm_seeds.png/62px-Swarm_seeds.png",
+    "description": "Spawns Broodlings upon each of the Brood Lord's attacks."
+  },
+  "Consume": {
+    "name": "Consume",
+    "image": "https://liquipedia.net/commons/images/b/b6/Consume.png",
+    "caster": "Viper",
+    "range": "7",
+    "cooldown": "1s",
+    "duration": "14s",
+    "hotkey": "C",
+    "description": "Targets friendly structure and consumes 200 life over 14 seconds converting the damage dealt into 50 energy. Excluded targets: Creep Tumor"
+  },
+  "Uproot": {
+    "name": "Uproot",
+    "image": "https://liquipedia.net/commons/images/thumb/4/43/Uproot.png/62px-Uproot.png",
+    "duration": "1 s",
+    "hotkey": "R",
+    "description": "Allows the Spine Crawler and Spore Crawler to Uproot and Burrow in a new location. While uprooted, the Crawler has a speed of 1 off creep and 2.5 on creep. Uprooted Spore Crawlers do not have detection."
+  },
+  "Root (spine)": {
+    "name": "Root",
+    "image": "https://liquipedia.net/commons/images/thumb/8/80/Root.png/62px-Root.png",
+    "duration": "12 s",
+    "hotkey": "R",
+    "description": "Allows the Spine Crawler to Root itself to the ground, gaining attack ability. Can be performed only on Creep."
+  },
+  "Root (spore)": {
+    "name": "Root",
+    "image": "https://liquipedia.net/commons/images/thumb/8/80/Root.png/62px-Root.png",
+    "duration": "6 s",
+    "hotkey": "R",
+    "description": "Allows the Spore Crawler to Root itself to the ground, gaining attack ability. Can be performed only on Creep."
+  },
+  "Load (nydus)": {
+    "name": "Load",
+    "image": "https://liquipedia.net/commons/images/d/de/Load_zerg.gif",
+    "hotkey": "L",
+    "description": "The Nydus Worms and Nydus Networks can load a maximum of 255 ground units into a shared underground network."
+  },
+  "Detector (spore)": {
+    "name": "Detector",
+    "image": "https://liquipedia.net/commons/images/b/b4/Detector.gif",
+    "range": "11",
+    "description": "The Spore Crawler is a Detector structure that can see cloaked, burrowed and hallucinated units."
+  },
+  "Hardened Shield": {
+    "name": "Hardened Shield",
+    "image": "https://liquipedia.net/commons/images/thumb/d/d6/Hardened_shield.png/62px-Hardened_shield.png",
+    "description": "An Immortal's passive ability that reduces all damage inflicted on the shields that is greater than 10 to 10."
+  },
+  "Prismatic Beams": {
+    "name": "Prismatic Beams",
+    "image": "https://liquipedia.net/commons/images/thumb/f/ff/Prismatic_beams.png/61px-Prismatic_beams.png",
+    "description": "Increases the damage of the Void Ray the longer its attack animation occurs."
+  },
+  "Upgrade To Mothership": {
+    "name": "Upgrade To Mothership",
+    "image": "https://liquipedia.net/commons/images/b/b6/Mothership_Icon.png",
+    "caster": "Mothership Core",
+    "description": "Upgrades into the Mothership. Can use Time Warp and Mass Recall. Cloaks nearby units and structures.",
+    "duration": "100 s",
+    "hotkey": "U"
+  },
+  "Corruption": {
+    "name": "Corruption",
+    "image": "https://liquipedia.net/commons/images/thumb/7/75/Corruption.png/61px-Corruption.png",
+    "range": "6",
+    "cooldown": "45 s",
+    "duration": "30 s",
+    "hotkey": "C",
+    "description": "The Corruptor corrupts target unit. It can't target structures. Unit takes 20% more damage for 30 seconds."
+  }
+}
